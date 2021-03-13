@@ -16,7 +16,7 @@ header {
     padding: 25px;
     nav {
         display: flex;
-        lex-direction: row;
+        flex-direction: row;
         a {
             margin-right: 35px;
             cursor: pointer;
@@ -163,5 +163,150 @@ header {
 
 
 .services {
+    color: black;
+    padding: 50px;
     margin-top: 75px;
+    background-color: #e4fdf9;
+    .services_text {
+        line-height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 70px;
+        p {
+            margin-top: 10px;
+            width: 700px;
+            line-height: 20px;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: 0 auto;
+        .card {
+            padding: 10px;
+            width: 250px;
+            margin-top: 20px;
+            height: 320px;
+            text-align: center;
+            cursor: pointer;
+            background-color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            button {
+                padding: 15px;
+                cursor: pointer;
+                text-transform: uppercase;
+                outline: 2px solid black;
+                border: none;
+                font-weight: 700;
+                &:hover {
+                    outline: 2px solid white;
+                    color: white;
+                    background-color: transparent;
+                }
+            }
+            &:hover {
+                color: white;
+                background-color: #00897b;
+                transition: .4s;
+            }
+        }
+    } 
+}
+
+.latest {
+    margin-top: 50px;
+    .latest_text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 30px;
+            width: 700px;
+            margin: 0 auto;
+        }
+    }
+
+    .filter {
+        margin-top: 50px;
+        .hide {
+            display: none;
+        }
+        nav {
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 800px;
+                margin: 0 auto;
+                justify-content: space-around;
+                li {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    outline: 2px solid #00897b;
+                    color: black;
+                    font-weight: 600;
+                    cursor: pointer;
+                    margin-left: 15px;
+                    &:hover {
+                        color: white;
+                        background-color: #00897b;
+                        outline: 2px solid white;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+        .galery {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            .box {
+                position: relative;
+            }
+            .block {
+                visibility:hidden;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                line-height: 30px;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                color: #00897b;
+                font-weight: bold;
+                font-size: 20px;
+                cursor: pointer;
+                text-shadow: black 1px 1px 0,black -1px -1px 0, 
+                black -1px 1px 0,black 1px -1px 0;
+
+                p:first-child {
+                    font-size: 30px;
+                }
+            }
+            .box:hover .block {
+                visibility: visible;
+                transition: 2s;
+            }
+            img {
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+    }
 }
