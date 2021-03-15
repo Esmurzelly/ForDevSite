@@ -354,3 +354,43 @@ header nav a {
 .pricing .cards .card button:hover p {
   font-weight: 800;
 }
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team .team_text {
+  text-align: center;
+  line-height: 50px;
+}
+.team .members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.team .members .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.team .members .card .soc {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.team .members .card .soc i {
+  margin-right: 15px;
+  padding: 15px;
+  color: #00897b;
+  cursor: pointer;
+}
+.team .members .card p {
+  font-weight: 800;
+}
