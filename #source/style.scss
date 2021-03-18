@@ -417,3 +417,93 @@ header {
         }
     }
 }
+
+.blog {
+    margin-top: 70px;
+    background-color: #e4fdf9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .blog_text {
+        padding-top: 30px;
+        text-align: center;
+        line-height: 40px;
+        p {
+            max-width: 700px;
+            margin: 0 auto;
+        } 
+    }
+    .cards {
+        .card {
+            img {
+                max-width: 100%;
+            }
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 70px;
+            .card_text {
+                max-width: 450px;
+                display: flex;
+                flex-direction: column;
+                float: left;
+                justify-content: space-around;
+                height: 200px;
+                .card_text_date {
+                    display: flex;
+                    flex-direction: row;
+                    p:nth-child(2) {
+                        margin-left: 20px;
+                    }
+                }
+            }
+            i {
+                margin-right: 5px;
+            }
+            h3 {
+                cursor: pointer;
+                &:hover {
+                    color: #00897b;
+                    transition: .3s;
+                }
+            }
+            
+        }
+        .card:nth-child(2) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+    .more_view {
+        margin: 0 auto;
+        padding: 20px 40px;
+        background-color: #00897b;
+        color: white;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        width: 250px;
+        height: 50px;
+    }
+}
+
+.us {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    .us_text {
+        text-align: center;
+        margin: 0 auto;
+        h2 {
+            font-weight: bold;
+        }
+        p {
+            width: 700px;
+            margin-top: 15px;
+            line-height: 20px;
+        }
+    }
+}
