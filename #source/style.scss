@@ -7,7 +7,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-
 header {
     display: flex;
     flex-direction: row;
@@ -24,6 +23,7 @@ header {
             color: #212121;
         }
     }
+
 }
 
 .slide {
@@ -316,7 +316,6 @@ header {
 
 .pricing {
     margin-top: 70px;
-    margin-bottom: 70px;
     background-color: #f0f1f1;
     display: flex;
     flex-direction: column;
@@ -329,7 +328,8 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-top: 50px;
+        flex-wrap: wrap;
+        margin-top: 30px;
         
         .card {
             display: flex;
@@ -337,7 +337,8 @@ header {
             align-items: center;
             text-align: center;
             justify-content: space-around;
-            background-color: #fff;
+            background-color: #fff; 
+            margin-top: 20px;
             padding: 30px;
             width: 250px;
             height: 420px;
@@ -379,6 +380,7 @@ header {
 
 
 .team {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -399,6 +401,7 @@ header {
             flex-direction: column;
             justify-content: space-around;
             text-align: center;
+            margin-top: 20px;
 
             .soc {
                 margin-top: 15px;
@@ -455,7 +458,6 @@ header {
     }
     .cards {
         .card {
-            border: 2px solid blue;
             img {
                 max-width: 100%;
             }
@@ -466,7 +468,6 @@ header {
             align-items: center;
             margin-bottom: 70px;
             .card_text {
-                border: 2px solid red;
                 max-width: 450px;
                 display: flex;
                 flex-direction: column;
